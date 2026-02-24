@@ -8,4 +8,8 @@ I had been going back-and-forth as to what book or project I should start showca
  - C++11
  - CMake
 
+### Products
+ - [Hello Color - image.ppm](/image.ppm)
+ - [Blue & White 'Sky'](/sky.ppm)
 ---
+
