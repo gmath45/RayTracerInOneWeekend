@@ -31,3 +31,6 @@ elseif (CMAKE_CXX_COMPILER_ID MATCHES "Clang")
 endif()
 
 add_executable(RayTracer src/main.cpp)
+add_executable(Sphere src/sphere.cpp)
+add_executable(ShadedSphere src/sphere_shaded.cpp)
+add_executable(Hittable src/hittable.cpp)

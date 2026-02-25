@@ -1,8 +1,31 @@
-#include "rtweekend.h"
+#include "vec3.h"
+#include "ray.h"
+#include "color.h"
 
 #include <iostream>
 
+double hit_sphere(const Point3& center, double radius, const ray& r) {
+    Vec3 oc = center - r.origin();
+    auto a = r.direction().length_squared();
+    auto h = dot(r.direction(), oc);
+    auto c = oc.length_squared() - radius*radius;
+    auto discriminant = h*h - a*c;
+    
+    // Here to visualize Normals
+    if (discriminant < 0) {
+        return -1.0;
+    } else {
+        return (h - std::sqrt(discriminant) ) / a;
+    }
+}
+
 color ray_color(const ray& r) {
+    auto t = hit_sphere(Point3(0,0,-1), 0.5, r);
+    if (t > 0.0) {
+        Vec3 N = UV(r.at(t) - Vec3(0,0,-1));
+        return 0.5*color(N.x()+1, N.y()+1, N.z()+1);
+    }
+
     // LERP function (0.0 -> White, 1.0 -> Blue)
     Vec3 unit_direction = UV(r.direction());
     auto a = 0.5*(unit_direction.y() + 1.0);
