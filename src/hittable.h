@@ -1,15 +1,17 @@
 #ifndef HITTABLE_H
 #define HITTABLE_H
 
+class material;
 
 class hit_record {
     public:
         Point3 p;
         Vec3 normal;
+        shared_ptr<material> mat;
         double t;
+        bool front_face;
         
         // Determine if surface is front-facing
-        bool front_face;
         void set_face_normal(const ray& r, const Vec3& outward_normal) {
             // NOTE: `outward_bound` assumed to have Unit Length
             front_face = dot(r.direction(), outward_normal) < 0;

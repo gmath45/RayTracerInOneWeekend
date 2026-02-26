@@ -15,6 +15,7 @@ I had been going back-and-forth as to what book or project I should start showca
 > - `ray.h`
 > - `vec3.h`
 > - `main.cpp` \
+> 
 > [![Hello Color](PPMs/image.png "Hello Color")](PPMs/image.ppm)
 
 > #### [Blue & White 'Sky'](PPMs/sky.ppm):
@@ -23,6 +24,7 @@ I had been going back-and-forth as to what book or project I should start showca
 > - `ray.h`
 > - `vec3.h`
 > - `main.cpp` \
+> 
 > [![Sky](PPMs/sky.png "Blue & White 'Sky'")](PPMs/sky.ppm)
 
 > #### [Red Sphere (Unshaded)](PPMs/sphere.ppm):
@@ -31,6 +33,7 @@ I had been going back-and-forth as to what book or project I should start showca
 > - `ray.h`
 > - `vec3.h`
 > - `sphere.cpp` \
+> 
 > [![Sphere](PPMs/sphere.png "Red Sphere (Unshaded)")](PPMs/sphere.ppm)
 
 > #### [Red Sphere (Shaded)](PPMs/sphere_shaded.ppm):
@@ -39,6 +42,7 @@ I had been going back-and-forth as to what book or project I should start showca
 > - `ray.h`
 > - `vec3.h`
 > - `sphere_shaded.cpp` \
+>
 > [![Shaded Sphere](PPMs/sphere_shaded.png "Red Sphere (Shaded)")](PPMs/sphere_shaded.ppm)
 
 > #### [Hittable](PPMs/hittable.ppm):
@@ -48,6 +52,7 @@ I had been going back-and-forth as to what book or project I should start showca
 > - `rtweekend.h`
 > - `sphere.h`
 > - `hittable.cpp` \
+> 
 > [![Hittable](PPMs/hittable.png "Hittable")](PPMs/hittable.ppm)
 
 > #### [Camera](PPMs/camera.ppm):
@@ -55,12 +60,14 @@ I had been going back-and-forth as to what book or project I should start showca
 > Same picture but form the 'view' of the `Camera()`
 > - `camera.h`
 > - `camera.cpp` \
+> 
 > [![Intervals](PPMs/camera.png "Camera")](PPMs/camera.ppm)
 
 > #### [Square Anti-Aliasing](PPMs/square_aa.ppm):
 > ---
 > - `interval.h`
 > - `square_aa.cpp`: Implement AA \
+> 
 > [![Square Anti Aliasing](PPMs/square_aa.png "Square Anti-Aliasing")](PPMs/square_aa.ppm)
 
 > #### [Diffuse Material](PPMs/diffuse_1.ppm):
@@ -81,6 +88,20 @@ I had been going back-and-forth as to what book or project I should start showca
 > - `gamma_1.cpp`
 > 
 > [![Gamma Correction](PPMs/gamma_1.png "Gamma Correction")](PPMs/gamma_1.ppm)
+
+> #### [Metal Material](PPMs/metal.ppm):
+> ---
+> - `camera.h`:
+>   - Modified `ray_color()` with `material.h` classes
+> - `material.h`:
+>   - Added `material`, `lambertian` & `metal` classes
+> - `sphere.h`:
+>   - Initialized `mat` pointer
+> - `vec3.h`:
+>   - Added `reflect()` for Vec3s and Normals
+> - `metal.cpp`
+> 
+> [![Metal Material](PPMs/metal.png "Metal Material")](PPMs/metal.ppm)
 
 ---
 
