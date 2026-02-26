@@ -53,8 +53,18 @@ I had been going back-and-forth as to what book or project I should start showca
 > #### [Camera](PPMs/camera.ppm):
 > ---
 > Same picture but form the 'view' of the `Camera()`
-> - `camera.h` \
+> - `camera.h`
+> - `camera.cpp` \
+
 > [![Intervals](PPMs/camera.png "Camera")](PPMs/camera.ppm)
+
+> #### [Square Anti-Aliasing](PPMs/camera.ppm):
+> ---
+> Same picture but form the 'view' of the `Camera()`
+> - `interval.h`
+> - `square_aa.cpp`: Implement AA \
+> [![Square Anti Aliasing](PPMs/square_aa.png "Square Anti-Aliasing")](PPMs/square_aa.ppm)
+
 
 ---
 
