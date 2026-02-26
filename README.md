@@ -55,16 +55,32 @@ I had been going back-and-forth as to what book or project I should start showca
 > Same picture but form the 'view' of the `Camera()`
 > - `camera.h`
 > - `camera.cpp` \
-
 > [![Intervals](PPMs/camera.png "Camera")](PPMs/camera.ppm)
 
-> #### [Square Anti-Aliasing](PPMs/camera.ppm):
+> #### [Square Anti-Aliasing](PPMs/square_aa.ppm):
 > ---
-> Same picture but form the 'view' of the `Camera()`
 > - `interval.h`
 > - `square_aa.cpp`: Implement AA \
 > [![Square Anti Aliasing](PPMs/square_aa.png "Square Anti-Aliasing")](PPMs/square_aa.ppm)
 
+> #### [Diffuse Material](PPMs/diffuse_1.ppm):
+> ---
+> - `camera.h`: 
+>   - apply Lambertian Diffuse to `ray_color()`
+>   - implement `max_depth` to prevent Stack Overflow
+> - `vec3.h`: 
+>   - Implemented random Vec3
+> - `diffuse_1.cpp`
+> 
+> [![Diffuse Material](PPMs/diffuse_1.png "Diffuse Material")](PPMs/diffuse_1.ppm)
+
+> #### [Gamma Correction](PPMs/gamma_1.ppm):
+> ---
+> - `color.h`:
+>   - Convert to gamma-space `linear_to_gamma()`
+> - `gamma_1.cpp`
+> 
+> [![Gamma Correction](PPMs/gamma_1.png "Gamma Correction")](PPMs/gamma_1.ppm)
 
 ---
 

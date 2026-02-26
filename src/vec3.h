@@ -45,6 +45,16 @@ class Vec3 {
         double length_squared() const {
             return e[0]*e[0] + e[1]*e[1] + e[2]*e[2];
         }
+
+        // Create random Vec3
+        static Vec3 random() {
+            return Vec3(random_double(), random_double(), random_double());
+        }
+
+        static Vec3 random(double min, double max) {
+            return Vec3(random_double(min, max), random_double(min, max), random_double(min, max));
+        }
+
 };
 
 // Point3 == vec3
@@ -93,6 +103,22 @@ inline Vec3 cross(const Vec3& u, const Vec3& v) {
 
 inline Vec3 UV(const Vec3& v) {
     return v / v.length();
+}
+
+inline Vec3 random_UV() {
+    while (true) {
+        auto p = Vec3::random(-1,1);
+        auto lensq = p.length_squared();
+        if (1e-160 < lensq && lensq <= 1) return p/sqrt(lensq); // 1e-160 solves floating-point leak
+    }
+}
+
+inline Vec3 random_on_hemisphere(const Vec3& normal) {
+    Vec3 on_unit_sphere = random_UV();
+    if (dot(on_unit_sphere, normal) > 0.0)      // Is it on the same hemisphere as Normal
+        return on_unit_sphere;
+    else
+        return -on_unit_sphere;     // if not, flip it
 }
 
 #endif

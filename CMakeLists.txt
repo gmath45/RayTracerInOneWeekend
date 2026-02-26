@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5.0)
+cmake_minimum_required(VERSION 3.1.0...4.2)
 project(InOneWeekend LANGUAGES CXX)
 
 set ( CMAKE_CXX_STANDARD           11 )
@@ -35,4 +35,6 @@ endif()
 #add_executable(ShadedSphere src/sphere_shaded.cpp)
 #add_executable(Hittable src/hittable.cpp)
 #add_executable(Camera src/camera.cpp)
-add_executable(SquareAA src/square_aa.cpp)
+#add_executable(SquareAA src/square_aa.cpp)
+#add_executable(Diffuse_1 src/diffuse_1.cpp)
+add_executable(Gamma_1 src/gamma_1.cpp)
