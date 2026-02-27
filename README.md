@@ -89,7 +89,7 @@ I had been going back-and-forth as to what book or project I should start showca
 > 
 > [![Gamma Correction](PPMs/gamma_1.png "Gamma Correction")](PPMs/gamma_1.ppm)
 
-> #### [Metal Material](PPMs/metal.ppm):
+> #### [Metal Material](PPMs/metal.ppm): ( hover image for Named Differences)
 > ---
 > - `camera.h`:
 >   - Modified `ray_color()` with `material.h` classes
@@ -101,7 +101,19 @@ I had been going back-and-forth as to what book or project I should start showca
 >   - Added `reflect()` for Vec3s and Normals
 > - `metal.cpp`
 > 
-> [![Metal Material](PPMs/metal.png "Metal Material")](PPMs/metal.ppm)
+>> some of these don't look like much has changed, but that is because the detailing is to small to notice (verified with `diff editor` in Hex)
+>
+> [![Metal Material](PPMs/metal.png "Metal Material")](PPMs/metal.ppm) 
+[![Fuzz](PPMs/fuzz.png "Fuzz")](PPMs/fuzz.ppm) 
+[![Dielectric](PPMs/dielectric.png "Dielectric")](PPMs/dielectric.ppm) 
+[![Internal Refraction](PPMs/internal_refraction.png "Internal Refraction")](PPMs/internal_refraction.ppm)
+[![Hollow Glass](PPMs/hollow.png "Hollow Glass")](PPMs/hollow.ppm)
+
+> #### [Positionable Camera](PPMs/positional_cam.ppm):
+> ---
+> - `positionable_cam.cpp`:
+> 
+> [![Positionable Camera](PPMs/positional_cam.png "Positionable Camera")](PPMs/positional_cam.ppm)
 
 ---
 
