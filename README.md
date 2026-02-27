@@ -14,7 +14,7 @@ I had been going back-and-forth as to what book or project I should start showca
 > - `color.h`
 > - `ray.h`
 > - `vec3.h`
-> - `main.cpp` \
+> - `main.cpp`
 > 
 > [![Hello Color](PPMs/image.png "Hello Color")](PPMs/image.ppm)
 
@@ -23,7 +23,7 @@ I had been going back-and-forth as to what book or project I should start showca
 > - `color.h`
 > - `ray.h`
 > - `vec3.h`
-> - `main.cpp` \
+> - `main.cpp`
 > 
 > [![Sky](PPMs/sky.png "Blue & White 'Sky'")](PPMs/sky.ppm)
 
@@ -32,7 +32,7 @@ I had been going back-and-forth as to what book or project I should start showca
 > - `color.h`
 > - `ray.h`
 > - `vec3.h`
-> - `sphere.cpp` \
+> - `sphere.cpp`
 > 
 > [![Sphere](PPMs/sphere.png "Red Sphere (Unshaded)")](PPMs/sphere.ppm)
 
@@ -41,7 +41,7 @@ I had been going back-and-forth as to what book or project I should start showca
 > - `color.h`
 > - `ray.h`
 > - `vec3.h`
-> - `sphere_shaded.cpp` \
+> - `sphere_shaded.cpp`
 >
 > [![Shaded Sphere](PPMs/sphere_shaded.png "Red Sphere (Shaded)")](PPMs/sphere_shaded.ppm)
 
@@ -51,7 +51,7 @@ I had been going back-and-forth as to what book or project I should start showca
 > - `hittable_list.h`
 > - `rtweekend.h`
 > - `sphere.h`
-> - `hittable.cpp` \
+> - `hittable.cpp`
 > 
 > [![Hittable](PPMs/hittable.png "Hittable")](PPMs/hittable.ppm)
 
@@ -59,14 +59,14 @@ I had been going back-and-forth as to what book or project I should start showca
 > ---
 > Same picture but form the 'view' of the `Camera()`
 > - `camera.h`
-> - `camera.cpp` \
+> - `camera.cpp`
 > 
 > [![Intervals](PPMs/camera.png "Camera")](PPMs/camera.ppm)
 
 > #### [Square Anti-Aliasing](PPMs/square_aa.ppm):
 > ---
 > - `interval.h`
-> - `square_aa.cpp`: Implement AA \
+> - `square_aa.cpp`: Implement AA
 > 
 > [![Square Anti Aliasing](PPMs/square_aa.png "Square Anti-Aliasing")](PPMs/square_aa.ppm)
 
