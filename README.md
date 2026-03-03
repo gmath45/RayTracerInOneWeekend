@@ -111,9 +111,22 @@ I had been going back-and-forth as to what book or project I should start showca
 
 > #### [Positionable Camera](PPMs/positional_cam.ppm):
 > ---
-> - `positionable_cam.cpp`:
+> - `wide_angle.cpp`
+> - `camera_look.cpp`
 > 
-> [![Positionable Camera](PPMs/positional_cam.png "Positionable Camera")](PPMs/positional_cam.ppm)
+> [![Wide-Angle Camera](PPMs/wide_angle.png "Wide-Angle Camera")](PPMs/wide_angle.ppm) [![Camera Look](PPMs/camera_look.png "Camera Look")](PPMs/camera_look.ppm)
+
+> #### [Defocus Disk (Depth of Field)](PPMs/defocus_blur.ppm):
+> ---
+> - `defocus_blur.cpp`
+> 
+> [![Defocus Disk](PPMs/defocus_disk.png "Defocus Disk")](PPMs/defocus_disk.ppm)
+
+> #### [Cover Image](PPMs/cover_image.ppm):
+> ---
+> - `cover_image.cpp`
+> 
+> [![Cover Image](PPMs/cover_image.png "Cover Image")](PPMs/cover_image.ppm)
 
 ---
 
